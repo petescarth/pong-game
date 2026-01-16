@@ -259,11 +259,12 @@ function App() {
       </div>
 
       <div
-        className="relative border-4 border-white shadow-2xl"
+        className="relative border-4 border-white shadow-2xl overflow-hidden"
         style={{
           width: CANVAS_WIDTH,
           height: CANVAS_HEIGHT,
           boxShadow: '0 0 40px rgba(255, 255, 255, 0.3)',
+          boxSizing: 'content-box',
         }}
       >
         <canvas
